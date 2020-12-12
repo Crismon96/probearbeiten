@@ -1,12 +1,16 @@
-import { useQuery } from '@apollo/client';
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
-import { AbcQueryResult, AbcQueryVariables } from './generated/graphql';
-import logo from './logo.svg';
-import { appQuery } from './screens/app.queries';
+import DefaultErrorBoundary from './components/ErrorBoundary/components/DefaultErrorFallback/DefaultErrorFallback';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import SideNavigation from './components/SideNavigation/SideNavigation';
+import { Main, SectionContainer } from './utils/appStyles.styles';
+
+const Timer = lazy(() => import('./screens/Timer/Timer'));
+const Overview = lazy(() => import('./screens/Overview/Overview'));
 
 function App() {
-  const { data } = useQuery<AbcQueryResult, AbcQueryVariables>(appQuery);
+  // const { data } = useQuery<AbcQueryResult, AbcQueryVariables>(appQuery);
   // React.useEffect(() => {
   //   fetch('http://localhost:8000/graphql', {
   //     method: 'POST',
@@ -28,15 +32,25 @@ function App() {
   // }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> {JSON.stringify(data)}.
-        </p>
-        <button>Learn React</button>
-      </header>
-    </div>
+    <>
+      <SideNavigation />
+
+      <SectionContainer>
+        <Main>
+          <Suspense fallback={null}>
+            <ErrorBoundary FallbackComponent={DefaultErrorBoundary}>
+              <Route path="/" exact>
+                <Timer />
+              </Route>
+
+              <Route path="/overview" exact>
+                <Overview />
+              </Route>
+            </ErrorBoundary>
+          </Suspense>
+        </Main>
+      </SectionContainer>
+    </>
   );
 }
 
