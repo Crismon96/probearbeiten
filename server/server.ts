@@ -8,6 +8,9 @@ import typeDefs from './schema/rootSchema';
 
 const app = express();
 
+// Dummy DB
+export const dataStore = new DataStore();
+
 // For REST just in case I need it
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');

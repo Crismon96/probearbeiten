@@ -1,31 +1,30 @@
 const typeDefs = `
+# Scalars ------------------------------------------------------------------------------------------------------------
+
+# A ISO-String Datetime Format
+scalar Date
+
 # Queries ------------------------------------------------------------------------------------------------------------
 
 type RootQuery {
-  posts: [Post]
+  timer(id: ID!): Timer!
+  timers(offset: Int!, limit: Int!, filter: String): [Timer!]!
 }
 
 # Mutations ------------------------------------------------------------------------------------------------------------
 
 type RootMutation {
-  upvotePost (
-    postId: ID!
-  ): Post
+  createTimer(description: String!, from: Date!, until: Date!): Timer!
+  updateTimer(description: String!, from: Date!, until: Date!): Timer!
 }
 
 # Object-Types ------------------------------------------------------------------------------------------------------------
 
-type Author {
+type Timer {
   id: ID!
-  """
-  the list of Posts by this author
-  """
-  posts: [Post]
-}
-
-type Post {
-  id: ID!
-  title: String!
+  description: String
+  from: Date!
+  until: Date!
 }
 
 schema {

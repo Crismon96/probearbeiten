@@ -1,10 +1,7 @@
-import { Post } from '../entities/post';
-
 const mutationResolver = {
   RootMutation: {
-    upvotePost(_: unknown, { postId }: any) {
-      return new Post();
-    },
+    createTimer(_: unknown, { postId }: any) {},
+    updateTimer(_: unknown, { postId }: any) {},
   },
 };
 

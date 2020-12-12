@@ -1,9 +1,8 @@
-import { Author } from '../entities/author';
-import { Post } from '../entities/post';
+import { Timer } from '../entities/timer';
+import { dataStore } from '../server';
 
 const objectTypeResolver = {
-  Author: new Author(),
-  Post: new Post(),
+  Timer: new Timer('timer-1', dataStore),
 };
 
 export default objectTypeResolver;

@@ -1,10 +1,7 @@
-import { Post } from '../entities/post';
-
 const queryResolver = {
   RootQuery: {
-    posts() {
-      return [new Post()];
-    },
+    timer() {},
+    timers() {},
   },
 };
 
