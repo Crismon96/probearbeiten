@@ -1,19 +1,12 @@
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import React from 'react';
 import './App.css';
+import { AbcQueryResult, AbcQueryVariables } from './generated/graphql';
 import logo from './logo.svg';
+import { appQuery } from './screens/app.queries';
 
 function App() {
-  const { data } = useQuery(gql`
-    query ABC {
-      posts {
-        id
-        title
-        __typename
-      }
-    }
-  `);
-
+  const { data } = useQuery<AbcQueryResult, AbcQueryVariables>(appQuery);
   // React.useEffect(() => {
   //   fetch('http://localhost:8000/graphql', {
   //     method: 'POST',
