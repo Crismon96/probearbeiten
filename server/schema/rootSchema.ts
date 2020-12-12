@@ -15,7 +15,7 @@ type RootQuery {
 
 type RootMutation {
   createTimer(description: String!, from: Date!, until: Date!): Timer!
-  updateTimer(description: String!, from: Date!, until: Date!): Timer!
+  updateTimer(id: ID!, description: String!, from: Date!, until: Date!): Timer!
 }
 
 # Object-Types ------------------------------------------------------------------------------------------------------------

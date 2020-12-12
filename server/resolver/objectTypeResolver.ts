@@ -1,8 +1,3 @@
-import { Timer } from '../entities/timer';
-import { dataStore } from '../server';
-
-const objectTypeResolver = {
-  Timer: new Timer('timer-1', dataStore),
-};
+const objectTypeResolver = {};
 
 export default objectTypeResolver;

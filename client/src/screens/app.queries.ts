@@ -1,11 +1,12 @@
 import { gql } from '@apollo/client';
 
 export const appQuery = gql`
-  query ABC {
-    posts {
+  query {
+    timer(id: "timer-1") {
       id
-      title
-      __typename
+      description
+      from
+      until
     }
   }
 `;

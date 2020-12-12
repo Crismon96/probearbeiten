@@ -11,79 +11,102 @@ export type Scalars = {
   Boolean: boolean;
   Int: number;
   Float: number;
+  /** A ISO-String Datetime Format */
+  Date: any;
 };
+
 
 export type RootQuery = {
   __typename?: 'RootQuery';
-  posts?: Maybe<Array<Maybe<Post>>>;
+  timer: Timer;
+  timers: Array<Timer>;
+};
+
+
+export type RootQueryTimerArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type RootQueryTimersArgs = {
+  offset: Scalars['Int'];
+  limit: Scalars['Int'];
+  filter?: Maybe<Scalars['String']>;
 };
 
 export type RootMutation = {
   __typename?: 'RootMutation';
-  upvotePost?: Maybe<Post>;
+  createTimer: Timer;
+  updateTimer: Timer;
 };
 
 
-export type RootMutationUpvotePostArgs = {
-  postId: Scalars['ID'];
+export type RootMutationCreateTimerArgs = {
+  description: Scalars['String'];
+  from: Scalars['Date'];
+  until: Scalars['Date'];
 };
 
-export type Author = {
-  __typename?: 'Author';
+
+export type RootMutationUpdateTimerArgs = {
   id: Scalars['ID'];
-  /** the list of Posts by this author */
-  posts?: Maybe<Array<Maybe<Post>>>;
+  description: Scalars['String'];
+  from: Scalars['Date'];
+  until: Scalars['Date'];
 };
 
-export type Post = {
-  __typename?: 'Post';
+export type Timer = {
+  __typename?: 'Timer';
   id: Scalars['ID'];
-  title: Scalars['String'];
+  description?: Maybe<Scalars['String']>;
+  from: Scalars['Date'];
+  until: Scalars['Date'];
 };
 
-export type AbcQueryVariables = Exact<{ [key: string]: never; }>;
+export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AbcQuery = (
+export type Unnamed_1_Query = (
   { __typename?: 'RootQuery' }
-  & { posts?: Maybe<Array<Maybe<(
-    { __typename: 'Post' }
-    & Pick<Post, 'id' | 'title'>
-  )>>> }
+  & { timer: (
+    { __typename?: 'Timer' }
+    & Pick<Timer, 'id' | 'description' | 'from' | 'until'>
+  ) }
 );
 
 
-export const AbcDocument = gql`
-    query ABC {
-  posts {
+export const Document = gql`
+    {
+  timer(id: "timer-1") {
     id
-    title
-    __typename
+    description
+    from
+    until
   }
 }
     `;
 
 /**
- * __useAbcQuery__
+ * __useQuery__
  *
- * To run a query within a React component, call `useAbcQuery` and pass it any options that fit your needs.
- * When your component renders, `useAbcQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * To run a query within a React component, call `useQuery` and pass it any options that fit your needs.
+ * When your component renders, `useQuery` returns an object from Apollo Client that contains loading, error, and data properties
  * you can use to render your UI.
  *
  * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
  *
  * @example
- * const { data, loading, error } = useAbcQuery({
+ * const { data, loading, error } = useQuery({
  *   variables: {
  *   },
  * });
  */
-export function useAbcQuery(baseOptions?: Apollo.QueryHookOptions<AbcQuery, AbcQueryVariables>) {
-        return Apollo.useQuery<AbcQuery, AbcQueryVariables>(AbcDocument, baseOptions);
+export function useQuery(baseOptions?: Apollo.QueryHookOptions<Query, QueryVariables>) {
+        return Apollo.useQuery<Query, QueryVariables>(Document, baseOptions);
       }
-export function useAbcLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<AbcQuery, AbcQueryVariables>) {
-          return Apollo.useLazyQuery<AbcQuery, AbcQueryVariables>(AbcDocument, baseOptions);
+export function useLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<Query, QueryVariables>) {
+          return Apollo.useLazyQuery<Query, QueryVariables>(Document, baseOptions);
         }
-export type AbcQueryHookResult = ReturnType<typeof useAbcQuery>;
-export type AbcLazyQueryHookResult = ReturnType<typeof useAbcLazyQuery>;
-export type AbcQueryResult = Apollo.QueryResult<AbcQuery, AbcQueryVariables>;
+export type QueryHookResult = ReturnType<typeof useQuery>;
+export type LazyQueryHookResult = ReturnType<typeof useLazyQuery>;
+export type QueryResult = Apollo.QueryResult<Query, QueryVariables>;

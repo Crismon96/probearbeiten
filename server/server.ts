@@ -1,6 +1,7 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import { makeExecutableSchema } from 'graphql-tools';
+import DataStore from './data/data-store';
 import mutationResolver from './resolver/mutationResolver';
 import objectTypeResolver from './resolver/objectTypeResolver';
 import queryResolver from './resolver/queryResolver';
