@@ -11,6 +11,7 @@ const app = express();
 // For REST just in case I need it
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, Content-Type, X-Requested-With, Accept');
   res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE');
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);

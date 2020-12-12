@@ -8,6 +8,7 @@ type Props = {
 function GraphqlProvider({ children }: Props) {
   const client = new ApolloClient({
     cache: new InMemoryCache(),
+    uri: 'http://localhost:8000/graphql',
   });
 
   return <ApolloProvider client={client}>{children}</ApolloProvider>;

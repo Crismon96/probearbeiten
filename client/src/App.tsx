@@ -5,7 +5,7 @@ import logo from './logo.svg';
 
 function App() {
   const { data } = useQuery(gql`
-    query {
+    query ABC {
       posts {
         id
         title
@@ -14,18 +14,34 @@ function App() {
     }
   `);
 
-  console.log(data);
+  // React.useEffect(() => {
+  //   fetch('http://localhost:8000/graphql', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ query: graphqlQuery }),
+  //   })
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((resData) => {
+  //       if (resData.errors) {
+  //         console.log('NOT SO SERIOUS ERROR');
+  //       }
+  //       console.log('resData: ', resData);
+  //     })
+  //     .catch(() => console.log('SERIOUS ERROR'));
+  // }, []);
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.tsx</code> {JSON.stringify(data)}.
         </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        <button>Learn React</button>
       </header>
     </div>
   );
