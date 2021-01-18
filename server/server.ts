@@ -3,7 +3,6 @@ import { graphqlHTTP } from 'express-graphql';
 import { makeExecutableSchema } from 'graphql-tools';
 import DataStore from './data/data-store';
 import mutationResolver from './resolver/mutationResolver';
-import objectTypeResolver from './resolver/objectTypeResolver';
 import queryResolver from './resolver/queryResolver';
 import typeDefs from './schema/rootSchema';
 
@@ -25,7 +24,7 @@ app.use((req, res, next) => {
 
 const executableSchema = makeExecutableSchema({
   typeDefs,
-  resolvers: [queryResolver, mutationResolver, objectTypeResolver],
+  resolvers: [queryResolver, mutationResolver],
 });
 
 app.use(
