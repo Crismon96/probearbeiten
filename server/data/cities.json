@@ -1,0 +1,22 @@
+[
+  {
+    "id": "city-1",
+    "name": "Dresden",
+    "average": {
+      "time": "Sat Jan 01 2021 24:00:00 GMT+0100",
+      "temperature": 20,
+      "rainingProbability": 50
+    },
+    "timeSeries": [
+      { "time": "Sat Jan 01 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sat Jan 01 2021 12:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sat Jan 01 2021 15:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sat Jan 01 2021 18:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sat Jan 01 2021 21:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sat Jan 01 2021 24:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sun Jan 02 2021 03:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sun Jan 02 2021 06:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
+      { "time": "Sun Jan 02 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20 }
+    ]
+  }
+]
