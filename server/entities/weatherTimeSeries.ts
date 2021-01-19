@@ -27,15 +27,11 @@ export class WeatherTimeSeries {
     return this._city.name;
   }
 
-  get temperature() {
-    return this._city.timeSeries.map((series) => {
-      return { time: series.time, data: series.temperature };
-    });
+  get cityId() {
+    return this._city.cityId;
   }
 
-  get humidity() {
-    return this._city.timeSeries.map((series) => {
-      return { time: series.time, data: series.humidity };
-    });
+  get weatherTimeSeriesData() {
+    return this._city.timeSeries;
   }
 }

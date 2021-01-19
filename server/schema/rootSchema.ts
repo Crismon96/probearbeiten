@@ -21,21 +21,25 @@ type RootMutation {
 
 type WeatherAverage {
   id: ID!
+  cityId: ID!
   name: String!
-  temperature: Int!
+  weatherIcon: String!
+  temperature: Float!
   rainingProbability: Int!
 }
 
 type WeatherTimeSeries {
   id: ID!
+  cityId: ID!
   name: String!
-  temperature: [WeatherData!]!
-  humidity: [WeatherData!]!
+  weatherTimeSeriesData: [WeatherData!]!
 }
 
 type WeatherData {
   time: Date!
-  data: Int!
+  weatherIcon: String!
+  temperature: Float!
+  humidity: Int!
 }
 
 schema {

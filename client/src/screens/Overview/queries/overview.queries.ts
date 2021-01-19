@@ -1,10 +1,11 @@
 import { gql } from '@apollo/client';
 
-export const abcQuery = gql`
-  query Timers {
+export const weatherOverviewQuery = gql`
+  query WeatherOverview {
     userWeatherData {
       id
       name
+      weatherIcon
       temperature
       rainingProbability
     }

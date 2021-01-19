@@ -27,6 +27,14 @@ export class WeatherAverage {
     return this._city.name;
   }
 
+  get cityId() {
+    return this._city.cityId;
+  }
+
+  get weatherIcon() {
+    return this._city.average.weatherIcon;
+  }
+
   get rainingProbability() {
     return this._city.average.rainingProbability;
   }

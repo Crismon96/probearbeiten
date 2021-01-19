@@ -1,22 +1,46 @@
 [
   {
     "id": "city-1",
+    "cityId": "2935022",
     "name": "Dresden",
     "average": {
       "time": "Sat Jan 01 2021 24:00:00 GMT+0100",
       "temperature": 20,
-      "rainingProbability": 50
+      "rainingProbability": 50,
+      "weatherIcon": "02d"
     },
     "timeSeries": [
-      { "time": "Sat Jan 01 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sat Jan 01 2021 12:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sat Jan 01 2021 15:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sat Jan 01 2021 18:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sat Jan 01 2021 21:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sat Jan 01 2021 24:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sun Jan 02 2021 03:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sun Jan 02 2021 06:00:00 GMT+0100", "temperature": 15, "humidity": 20 },
-      { "time": "Sun Jan 02 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20 }
+      { "time": "Sat Jan 01 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 12:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 15:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 18:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 21:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 24:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 03:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 06:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" }
+    ]
+  },
+  {
+    "id": "city-2",
+    "cityId": "2938912",
+    "name": "Darmstadt",
+    "average": {
+      "time": "Sat Jan 01 2021 24:00:00 GMT+0100",
+      "temperature": 18,
+      "rainingProbability": 30,
+      "weatherIcon": "02d"
+    },
+    "timeSeries": [
+      { "time": "Sat Jan 01 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 12:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 15:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 18:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 21:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sat Jan 01 2021 24:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 03:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 06:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" },
+      { "time": "Sun Jan 02 2021 09:00:00 GMT+0100", "temperature": 15, "humidity": 20, "weatherIcon": "02d" }
     ]
   }
 ]

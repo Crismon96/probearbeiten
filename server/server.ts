@@ -5,6 +5,8 @@ import DataStore from './data/data-store';
 import mutationResolver from './resolver/mutationResolver';
 import queryResolver from './resolver/queryResolver';
 import typeDefs from './schema/rootSchema';
+// Setup .env file as early as possible
+require('dotenv').config();
 
 const app = express();
 

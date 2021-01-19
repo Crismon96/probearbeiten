@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Timer() {
+function CityDetails() {
   return <div></div>;
 }
 
-export default Timer;
+export default CityDetails;

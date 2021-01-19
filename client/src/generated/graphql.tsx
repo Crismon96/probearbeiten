@@ -38,32 +38,36 @@ export type RootMutationAddCityArgs = {
 export type WeatherAverage = {
   __typename?: 'WeatherAverage';
   id: Scalars['ID'];
+  cityId: Scalars['ID'];
   name: Scalars['String'];
-  temperature: Scalars['Int'];
+  weatherIcon: Scalars['String'];
+  temperature: Scalars['Float'];
   rainingProbability: Scalars['Int'];
 };
 
 export type WeatherTimeSeries = {
   __typename?: 'WeatherTimeSeries';
   id: Scalars['ID'];
+  cityId: Scalars['ID'];
   name: Scalars['String'];
-  temperature: Array<WeatherData>;
-  humidity: Array<WeatherData>;
+  weatherTimeSeriesData: Array<WeatherData>;
 };
 
 export type WeatherData = {
   __typename?: 'WeatherData';
   time: Scalars['Date'];
-  data: Scalars['Int'];
+  weatherIcon: Scalars['String'];
+  temperature: Scalars['Float'];
+  humidity: Scalars['Int'];
 };
 
-export type TimersQueryVariables = Exact<{ [key: string]: never; }>;
+export type WeatherOverviewQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type TimersQuery = (
+export type WeatherOverviewQuery = (
   { __typename?: 'RootQuery' }
   & { userWeatherData: Array<(
     { __typename?: 'WeatherAverage' }
-    & Pick<WeatherAverage, 'id' | 'name' | 'temperature' | 'rainingProbability'>
+    & Pick<WeatherAverage, 'id' | 'name' | 'weatherIcon' | 'temperature' | 'rainingProbability'>
   )> }
 );

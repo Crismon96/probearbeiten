@@ -4,10 +4,12 @@ import { dataStore } from '../server';
 
 const queryResolver = {
   RootQuery: {
-    userWeatherData() {
+    async userWeatherData() {
+      await dataStore.fetchAllCitiesWeatherData();
       return dataStore.cities.map((city) => new WeatherAverage(city.id, dataStore));
     },
     cityWeatherData(_: unknown, { id }: any) {
+      // await dataStore.fetchAllCitiesWeatherData();
       return new WeatherTimeSeries(id, dataStore);
     },
   },
