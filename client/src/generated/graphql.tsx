@@ -16,58 +16,54 @@ export type Scalars = {
 
 export type RootQuery = {
   __typename?: 'RootQuery';
-  timer: Timer;
-  timers: Array<Timer>;
+  userWeatherData: Array<WeatherAverage>;
+  cityWeatherData: WeatherTimeSeries;
 };
 
 
-export type RootQueryTimerArgs = {
+export type RootQueryCityWeatherDataArgs = {
   id: Scalars['ID'];
-};
-
-
-export type RootQueryTimersArgs = {
-  offset: Scalars['Int'];
-  limit: Scalars['Int'];
-  filter?: Maybe<Scalars['String']>;
 };
 
 export type RootMutation = {
   __typename?: 'RootMutation';
-  createTimer: Timer;
-  updateTimer: Timer;
+  addCity: Scalars['Boolean'];
 };
 
 
-export type RootMutationCreateTimerArgs = {
-  description: Scalars['String'];
-  from: Scalars['Date'];
-  until: Scalars['Date'];
+export type RootMutationAddCityArgs = {
+  name: Scalars['String'];
 };
 
-
-export type RootMutationUpdateTimerArgs = {
+export type WeatherAverage = {
+  __typename?: 'WeatherAverage';
   id: Scalars['ID'];
-  description: Scalars['String'];
-  from: Scalars['Date'];
-  until: Scalars['Date'];
+  name: Scalars['String'];
+  temperature: Scalars['Int'];
+  rainingProbability: Scalars['Int'];
 };
 
-export type Timer = {
-  __typename?: 'Timer';
+export type WeatherTimeSeries = {
+  __typename?: 'WeatherTimeSeries';
   id: Scalars['ID'];
-  description?: Maybe<Scalars['String']>;
-  from: Scalars['Date'];
-  until: Scalars['Date'];
+  name: Scalars['String'];
+  temperature: Array<WeatherData>;
+  humidity: Array<WeatherData>;
 };
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+export type WeatherData = {
+  __typename?: 'WeatherData';
+  time: Scalars['Date'];
+  data: Scalars['Int'];
+};
+
+export type TimersQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type Unnamed_1_Query = (
+export type TimersQuery = (
   { __typename?: 'RootQuery' }
-  & { timer: (
-    { __typename?: 'Timer' }
-    & Pick<Timer, 'id' | 'description' | 'from' | 'until'>
-  ) }
+  & { userWeatherData: Array<(
+    { __typename?: 'WeatherAverage' }
+    & Pick<WeatherAverage, 'id' | 'name' | 'temperature' | 'rainingProbability'>
+  )> }
 );

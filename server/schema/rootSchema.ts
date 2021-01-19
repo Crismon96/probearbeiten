@@ -7,24 +7,35 @@ scalar Date
 # Queries ------------------------------------------------------------------------------------------------------------
 
 type RootQuery {
-  timer(id: ID!): Timer!
-  timers(offset: Int!, limit: Int!, filter: String): [Timer!]!
+  userWeatherData: [WeatherAverage!]!
+  cityWeatherData(id: ID!): WeatherTimeSeries!
 }
 
 # Mutations ------------------------------------------------------------------------------------------------------------
 
 type RootMutation {
-  createTimer(description: String!, from: Date!, until: Date!): Timer!
-  updateTimer(id: ID!, description: String!, from: Date!, until: Date!): Timer!
+  addCity(name: String!): Boolean!
 }
 
 # Object-Types ------------------------------------------------------------------------------------------------------------
 
-type Timer {
+type WeatherAverage {
   id: ID!
-  description: String
-  from: Date!
-  until: Date!
+  name: String!
+  temperature: Int!
+  rainingProbability: Int!
+}
+
+type WeatherTimeSeries {
+  id: ID!
+  name: String!
+  temperature: [WeatherData!]!
+  humidity: [WeatherData!]!
+}
+
+type WeatherData {
+  time: Date!
+  data: Int!
 }
 
 schema {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="109px" viewBox="0 0 75 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Detail/selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Detail/selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="75" height="109"></rect>
+        <g id="selected" fill-rule="nonzero" stroke="#D3D3D3" stroke-width="2">
+            <rect id="Rectangle-6" x="1" y="1" width="73" height="107"></rect>
+        </g>
+    </g>
+</svg>

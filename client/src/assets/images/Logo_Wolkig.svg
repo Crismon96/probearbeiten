@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="32px" viewBox="0 0 44 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo_Wolkig</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wetter_Detailansicht" transform="translate(-30.000000, -20.000000)" fill-rule="nonzero" stroke="#F0F2F5">
+            <g id="Logo" transform="translate(30.000000, 15.000000)">
+                <g id="Logo_Wolkig" transform="translate(0.000000, 5.000000)">
+                    <g id="Sonne">
+                        <ellipse id="Oval-2" stroke-width="1.6" fill="#F0F2F5" cx="14.6018382" cy="13.95" rx="5.58661765" ry="5.58"></ellipse>
+                        <rect id="Rectangle-2" stroke-width="0.896" x="14.25175" y="0.448" width="1" height="5.3815" rx="0.5"></rect>
+                        <path d="M14.6018382,22.0705 C14.4084898,22.0705 14.25175,22.2272398 14.25175,22.4205882 L14.25175,27.1019118 C14.25175,27.2952602 14.4084898,27.452 14.6018382,27.452 C14.7951866,27.452 14.9519265,27.2952602 14.9519265,27.1019118 L14.9519265,22.4205882 C14.9519265,22.2272398 14.7951866,22.0705 14.6018382,22.0705 Z" id="Rectangle-2" stroke-width="0.896"></path>
+                        <rect id="Rectangle-2" stroke-width="0.896" transform="translate(22.255613, 6.305292) rotate(-315.000000) translate(-22.255613, -6.305292) " x="21.9055245" y="3.61454181" width="1" height="5.3815" rx="0.5"></rect>
+                        <path d="M6.94806374,18.9039582 C6.75471535,18.9039582 6.59797551,19.060698 6.59797551,19.2540464 L6.59797551,23.93537 C6.59797551,24.1287183 6.75471535,24.2854582 6.94806374,24.2854582 C7.14141214,24.2854582 7.29815198,24.1287183 7.29815198,23.93537 L7.29815198,19.2540464 C7.29815198,19.060698 7.14141214,18.9039582 6.94806374,18.9039582 Z" id="Rectangle-2" stroke-width="0.896" transform="translate(6.948064, 21.594708) rotate(-315.000000) translate(-6.948064, -21.594708) "></path>
+                        <rect id="Rectangle-2" stroke-width="0.896" transform="translate(25.425910, 13.950000) rotate(-270.000000) translate(-25.425910, -13.950000) " x="25.0758217" y="11.25925" width="1" height="5.3815" rx="0.5"></rect>
+                        <rect id="Rectangle-2" stroke-width="0.896" transform="translate(3.777767, 13.950000) rotate(-270.000000) translate(-3.777767, -13.950000) " x="3.42767831" y="11.25925" width="1" height="5.3815" rx="0.5"></rect>
+                        <rect id="Rectangle-2" stroke-width="0.896" transform="translate(22.255613, 21.594708) rotate(-225.000000) translate(-22.255613, -21.594708) " x="21.9055245" y="18.9039582" width="1" height="5.3815" rx="0.5"></rect>
+                        <rect id="Rectangle-2" stroke-width="0.896" transform="translate(6.948064, 6.305292) rotate(-225.000000) translate(-6.948064, -6.305292) " x="6.59797551" y="3.61454181" width="1" height="5.3815" rx="0.5"></rect>
+                    </g>
+                    <path d="M8.61617647,25.2258679 C8.61617647,22.0530288 10.4712475,20.1946875 14.1813895,19.6508438 C14.2552225,14.5807727 16.2427985,11.5277833 20.1441176,10.4918757 C24.0454368,9.45596809 27.5568211,11.0488321 30.6782708,15.2704678 C33.6323558,14.350196 35.9511946,14.6156733 37.634787,16.0668998 C39.3183794,17.5181262 39.8483997,19.7083143 39.2248479,22.6374639 C41.8749493,23.5090352 43.2,24.9691606 43.2,27.0178399 C43.2,29.0665193 41.8749493,30.393906 39.2248479,31 L14.1813895,31 C10.4712475,30.3234177 8.61617647,28.398707 8.61617647,25.2258679 Z" id="Wolke" stroke-width="1.6" fill="#001529"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

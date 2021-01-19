@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="70px" viewBox="0 0 107 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Sonne_Bewölkt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Sonne_Bewölkt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wolkig" transform="translate(5.000000, 0.000000)" fill-rule="nonzero">
+            <g id="Sonne" fill="#FFCC00">
+                <circle id="Oval-2" cx="31.5" cy="31.5" r="12.6"></circle>
+                <g id="Group-2" transform="translate(29.700000, 0.000000)">
+                    <rect id="Rectangle-2" x="0" y="0" width="3.6" height="14.175" rx="1.8"></rect>
+                    <path d="M1.8,48.825 L1.8,48.825 C2.79411255,48.825 3.6,49.6308875 3.6,50.625 L3.6,61.2 C3.6,62.1941125 2.79411255,63 1.8,63 L1.8,63 C0.80588745,63 1.4540113e-15,62.1941125 1.33226763e-15,61.2 L2.22044605e-16,50.625 C1.0030093e-16,49.6308875 0.80588745,48.825 1.8,48.825 Z" id="Rectangle-2"></path>
+                </g>
+                <g id="Group-2" transform="translate(31.641421, 31.641421) rotate(-315.000000) translate(-31.641421, -31.641421) translate(29.641421, 0.141421)">
+                    <rect id="Rectangle-2" x="0" y="0" width="3.6" height="14.175" rx="1.8"></rect>
+                    <path d="M1.8,48.825 L1.8,48.825 C2.79411255,48.825 3.6,49.6308875 3.6,50.625 L3.6,61.2 C3.6,62.1941125 2.79411255,63 1.8,63 L1.8,63 C0.80588745,63 1.67605591e-15,62.1941125 1.55431223e-15,61.2 L0,50.625 C-1.21743675e-16,49.6308875 0.80588745,48.825 1.8,48.825 Z" id="Rectangle-2"></path>
+                </g>
+                <g id="Group" transform="translate(31.500000, 31.700000) rotate(-270.000000) translate(-31.500000, -31.700000) translate(29.500000, 0.200000)">
+                    <rect id="Rectangle-2" x="0" y="0" width="3.6" height="14.175" rx="1.8"></rect>
+                    <rect id="Rectangle-2" x="0" y="48.825" width="3.6" height="14.175" rx="1.8"></rect>
+                </g>
+                <g id="Group" transform="translate(31.358579, 31.641421) rotate(-225.000000) translate(-31.358579, -31.641421) translate(29.358579, 0.141421)">
+                    <rect id="Rectangle-2" x="0" y="0" width="3.6" height="14.175" rx="1.8"></rect>
+                    <rect id="Rectangle-2" x="0" y="48.825" width="3.6" height="14.175" rx="1.8"></rect>
+                </g>
+            </g>
+            <path d="M18,56.9616372 C18,49.7971618 22.183908,45.6009072 30.5517241,44.3728732 C30.7182464,32.9243254 35.201005,26.0304784 44,23.6913322 C52.798995,21.352186 60.7185352,24.9489757 67.7586207,34.4817014 C74.4212338,32.4036683 79.6511188,33.0031333 83.4482759,36.2800963 C87.2454329,39.5570593 88.4408352,44.5026451 87.0344828,51.1168539 C93.0114943,53.0849183 96,56.3819755 96,61.0080257 C96,65.6340758 93.0114943,68.6314006 87.0344828,70 L30.5517241,70 C22.183908,68.4722335 18,64.1261126 18,56.9616372 Z" id="Wolke" fill="#D8D8D8"></path>
+        </g>
+    </g>
+</svg>

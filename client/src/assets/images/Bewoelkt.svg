@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="70px" viewBox="0 0 107 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Bewölkt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Bewölkt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,46.7688325 C10,38.8011992 14.6666667,34.1345326 24,32.7688325 C24.1857363,20.0368703 29.1857363,12.3702036 39,9.76883251 C48.8142637,7.16746141 57.647597,11.1674614 65.5,21.7688325 C72.9313761,19.4578461 78.7647094,20.1245127 83,23.7688325 C87.2352906,27.4131523 88.5686239,32.9131523 87,40.2688325 C93.6666667,42.4575224 97,46.1241891 97,51.2688325 C97,56.4134759 93.6666667,59.7468092 87,61.2688325 L24,61.2688325 C14.6666667,59.5697991 10,54.7364658 10,46.7688325 Z" id="Wolke" fill="#D8D8D8" fill-rule="nonzero"></path>
+    </g>
+</svg>

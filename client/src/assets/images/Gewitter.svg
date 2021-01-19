@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="70px" viewBox="0 0 107 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Gewitter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Gewitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+            <polygon id="Path-2" fill="#FFCC00" points="25 57 29.6363636 44 37.3636364 44 34.2727273 51.2647059 42 51.2647059 27.7045455 70 31.5681818 57"></polygon>
+            <path d="M0,28.903521 C2.87483957e-14,22.8060952 3.54022989,19.2348146 10.6206897,18.1896793 C10.7615931,8.44623439 14.5546965,2.57913057 22,0.588367843 C29.4453035,-1.40239489 36.1464529,1.65870275 42.1034483,9.77166077 C47.7410439,8.00312198 52.1663313,8.51330492 55.3793103,11.3022096 C58.5922894,14.0911143 59.6037836,18.3001235 58.4137931,23.9292374 C63.4712644,25.6041858 66,28.4101919 66,32.3472559 C66,36.2843198 63.4712644,38.8352345 58.4137931,40 L10.6206897,40 C3.54022989,38.6997732 -2.80578351e-14,35.0009469 0,28.903521 Z" id="Wolke" fill="#D8D8D8"></path>
+        </g>
+    </g>
+</svg>

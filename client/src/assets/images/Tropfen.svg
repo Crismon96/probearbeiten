@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Tropfen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail/selected" transform="translate(-20.000000, -89.000000)" fill="#001529" fill-rule="nonzero">
+            <g id="selected">
+                <path d="M23.8,89 C21.2666667,93.3080008 20,96.2413341 20,97.8 C20,100.137999 21.9,101 23.8,101 C25.7,101 27.6,100.137999 27.6,97.8 C27.6,96.2413341 26.3333333,93.3080008 23.8,89 Z" id="Tropfen"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="32px" viewBox="0 0 128 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.4142136,16 L20.7071068,10.7071068 C21.0976311,10.3165825 21.0976311,9.68341751 20.7071068,9.29289322 C20.3165825,8.90236893 19.6834175,8.90236893 19.2928932,9.29289322 L13.2928932,15.2928932 C12.9023689,15.6834175 12.9023689,16.3165825 13.2928932,16.7071068 L19.2928932,22.7071068 C19.6834175,23.0976311 20.3165825,23.0976311 20.7071068,22.7071068 C21.0976311,22.3165825 21.0976311,21.6834175 20.7071068,21.2928932 L15.4142136,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wetter_Detailansicht" transform="translate(-70.000000, -582.000000)">
+            <g id="Button" transform="translate(70.000000, 582.000000)">
+                <rect id="Rectangle-9" fill="#001427" fill-rule="nonzero" x="0" y="0" width="128" height="32" rx="3"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

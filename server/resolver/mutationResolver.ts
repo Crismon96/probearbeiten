@@ -1,10 +1,10 @@
-import { RootMutationCreateTimerArgs } from '../types/generated/graphql';
+import { dataStore } from '../server';
 
 const mutationResolver = {
   RootMutation: {
-    createTimer(_: unknown, timer: RootMutationCreateTimerArgs) {
-      // const newTimer = dataStore.createTimer(timer);
-      // return new Timer(newTimer.id, dataStore);
+    addCity(_: unknown, name: any) {
+      const newCity = dataStore.addCity(name);
+      return newCity ? true : false;
     },
   },
 };
